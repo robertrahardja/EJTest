@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Test for Ethereum Transactions 
+  form(method='POST' action='/tx')
+          div.form-group
+            label(for='sender') Address of Sender : 
+            input#name.form-control(type='text', placeholder='address' name='from')
+            p
+            label(for='reciever') Amount in Ether : 
+            input#name.form-control(type='text', placeholder='address' name='amt')
+            p
+            button.btn.btn-primary(type='submit') Enter To Transact
+  
